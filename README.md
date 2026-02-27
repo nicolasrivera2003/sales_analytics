@@ -142,13 +142,24 @@ This indicates strong seasonal Q4 performance, likely influenced by holiday dema
 
 ---
 
+## Dataset
+
+This project uses the publicly available "Sample Superstore" dataset
+commonly used for business intelligence and analytics demonstrations.
+
+The dataset is included under:
+
+data/raw/Sample-Superstore.csv
+
+---
+
 ## ⚙️ Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/sales-analytics.git
-cd sales-analytics
+git clone https://github.com/nicolasrivera2003/sales_analytics.git
+cd sales_analytics
 ```
 
 Create and activate a virtual environment:
@@ -181,6 +192,18 @@ This generates:
 - reports/sales_by_quarter.csv  
 - reports/sales_by_month.csv  
 - reports/insights.md  
+
+---
+
+## Reproducibility
+
+All analytical outputs are generated programmatically through the pipeline:
+
+python -m src.main
+
+The Streamlit dashboard consumes structured outputs from the `reports/` directory.
+
+No manual intervention is required.
 
 ---
 
